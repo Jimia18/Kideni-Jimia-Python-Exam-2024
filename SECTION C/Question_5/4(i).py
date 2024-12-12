@@ -1,37 +1,18 @@
-class python:
-    def __init__(self):
-      self.book = []
+# Object-Oriented Programming (OOP) is a programming model that organizes software design around objects rather than functions.
+#  They have priciples like objects, classes.
 
-    def add_book(self, title, author, pages):
-       self.book.append({'title': title, 'author': author, 'pages': pages})
+#significance in software development
+# Object Oriented Programming allows developers to break down a complex system  into simpler, smaller, manageable,
+#  reusable components or objects.Each object can be developed, tested, and maintained independently(on its own)
 
-       
+#(b)
+# A class is a blueprint or template for creating objects in Object-Oriented Programming (OOP).
+#  It defines the structure and behavior the objects created from the class will have.
 
-    def is_available(self, title):
-        for book in self.book:
-            if book['title'] == title:
-                return book['available']
-        return False
-
-    def borrow_book(self, title):
-        for book in self.book:
-            if book['title'] == title and book['available']:
-                book['available'] = False
-                return f"You've borrowed {title}."
-        return f"{title} is not available."
-
-    def return_book(self, title):
-        for book in self.book:
-            if book['title'] == title:
-                book['available'] = True
-                return f"You've returned {title}."
-        return f"{title} not found in the library."
-
-python = python()
-python.add_book("1984", "George Orwell","100")
-print(python.borrow_book("1984"))
-print(python.is_available("1984"))
-python.return_book("1984")
+#It is different to an object because;
+# An object is an instance of a class and it holds actual values for those attributes and can use the methods.
 
 
 
+              
+ 
